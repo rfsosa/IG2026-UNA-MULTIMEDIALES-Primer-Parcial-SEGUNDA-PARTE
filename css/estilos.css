@@ -62,14 +62,17 @@ nav {
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
+    text-align: center;  
     margin: 0;
     padding: 0;
     font-family: "Abel", sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+nav ul li {
+    display: inline-block; 
 }
 
 nav ul li a:link {
@@ -207,13 +210,23 @@ ul.lista-obras {
     margin: 1rem 0;
 }
 
-ul.lista-obras li, p {
+/* Solo los li de lista-obras */
+ul.lista-obras li {
     font-family: "Abel", sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.04em;
     color: #0a1628;
     padding: 0.5rem 0 0.5rem 1.5rem;
     border-bottom: 1px solid #c0d0f0;
+}
+
+/* Solo los p que están dentro de lista-obras */
+ul.lista-obras p {
+    font-family: "Abel", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    color: #0a1628;
+    padding: 0.5rem 0 0.5rem 1.5rem;
 }
 
 ul.lista-obras li:last-child {
@@ -253,15 +266,6 @@ ul.lista-obras li:last-child {
     display: block;
 }
 
-.galeria h3 {
-    font-family: "Abel", sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 0.04em;
-    color: #0a1628;
-    padding: 0.5rem 0 0.5rem 1.5rem;
-
-
-}
 /* ============================================================
    Aside
    ============================================================ */
